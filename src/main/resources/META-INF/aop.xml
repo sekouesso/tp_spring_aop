@@ -1,0 +1,10 @@
+<!DOCTYPE aspectj PUBLIC "-//AspectJ//DTD//EN" "https://www.eclipse.org/aspectj/dtd/aspectj.dtd">
+<aspectj>
+    <weaver options="-verbose -showWeaveInfo">
+        <include within="com.x.sentinel.services.FinalFeeEngine"/>
+        <include within="com.x.sentinel.aspect.RetryAspect"/>
+    </weaver>
+    <aspects>
+        <aspect name="com.x.sentinel.aspect.RetryAspect"/>
+    </aspects>
+</aspectj>
